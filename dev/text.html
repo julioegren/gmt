@@ -277,11 +277,11 @@ characters, except in paragraph mode (<strong>-M</strong>)).</p>
 </div>
 <div class="section" id="required-arguments">
 <h2>Required Arguments<a class="headerlink" href="#required-arguments" title="Permalink to this headline">¶</a></h2>
-<dl class="simple" id="j">
+<span class="target" id="j"></span><dl class="simple">
 <dt><strong>-J</strong><em>parameters</em> <a class="reference internal" href="gmt.html#j-full"><span class="std std-ref">(more …)</span></a></dt><dd><p>Select map projection.  </p>
 </dd>
 </dl>
-<dl class="simple" id="r">
+<span class="target" id="r"></span><dl class="simple">
 <dt><strong>-R</strong><em>xmin</em>/<em>xmax</em>/<em>ymin</em>/<em>ymax</em>[<strong>+r</strong>][<strong>+u</strong><em>unit</em>] <a class="reference internal" href="gmt.html#r-full"><span class="std std-ref">(more …)</span></a></dt><dd><p>Specify the region of interest.  </p>
 </dd>
 </dl>
@@ -386,7 +386,7 @@ To <strong>not</strong> plot the text but activate clipping, use <strong>-G+n</s
 <dl class="simple" id="m">
 <dt><strong>-M</strong></dt><dd><p>Paragraph mode. Files must be multiple segment files. Segments are
 separated by a special record whose first character must be <em>flag</em>
-[Default is <strong>&gt;</strong>]. Starting in the 3rd column, we expect to find
+[Default is <strong>&gt;</strong>]. Starting in the 3rd field, we expect to find
 information pertaining to the typesetting of a text paragraph (the
 remaining lines until next segment header). The information expected
 is (<em>x y</em> [<em>font angle justify</em>] <em>linespace parwidth parjust</em>),
@@ -397,8 +397,9 @@ The justification of the text paragraph is governed by <em>parjust</em>
 which may be <strong>l</strong>(eft), <strong>c</strong>(enter), <strong>r</strong>(ight), or
 <strong>j</strong>(ustified). The segment header is followed by one or more
 lines with paragraph text. Text may contain the escape sequences
-discussed above. Separate paragraphs with a blank line.  Note that
-here, the justification set via <strong>-F+j</strong> applies to the box alignment
+discussed above, although composite characters are not supported.
+Separate paragraphs with a blank line.  Note that here,
+the justification set via <strong>-F+j</strong> applies to the box alignment
 since the text justification is set by <em>parjust</em>.</p>
 </dd>
 </dl>
@@ -415,7 +416,7 @@ leaves all text as is].</p>
 <dt><strong>-U</strong>[<em>label</em>][<strong>+c</strong>][<strong>+j</strong><em>just</em>][<strong>+o</strong><em>dx</em>/<em>dy</em>] <a class="reference internal" href="gmt.html#u-full"><span class="std std-ref">(more …)</span></a></dt><dd><p>Draw GMT time stamp logo on plot.</p>
 </dd>
 </dl>
-<dl class="simple" id="v">
+<span class="target" id="v"></span><dl class="simple">
 <dt><strong>-V</strong>[<em>level</em>] <a class="reference internal" href="gmt.html#v-full"><span class="std std-ref">(more …)</span></a></dt><dd><p>Select verbosity level [<strong>w</strong>].  </p>
 </dd>
 </dl>
@@ -600,7 +601,7 @@ trailing text.</p>
         
         &copy; Copyright 2020, The GMT Team.
       <span class="lastupdated">
-        Last updated on Sep 20, 2020.
+        Last updated on Nov 11, 2020.
       </span>
 
     </p>
